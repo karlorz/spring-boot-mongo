@@ -54,7 +54,7 @@ jobs:
 
   release:
     runs-on: ubuntu-22.04
-    needs: [continuous-deployment]
+    needs: [continuous-integration]
 
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
