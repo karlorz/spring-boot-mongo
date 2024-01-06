@@ -31,6 +31,7 @@ jobs:
         with:
           name: Package
           path: staging
+      - run: ls
       # Step 1
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
