@@ -22,7 +22,7 @@ jobs:
         run: mvn --batch-mode --update-snapshots verify --file student-service/pom.xml
       # Step 4
       - name: Package Application
-        run: mkdir staging && cp target/*.jar staging
+        run: mkdir staging && cp student-service/student-service-app/target/*.jar staging
       # Step 5
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
