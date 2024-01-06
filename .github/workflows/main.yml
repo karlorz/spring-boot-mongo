@@ -19,7 +19,7 @@ jobs:
           distribution: 'adopt'
       # Step 3
       - name: Build Application and Run unit Test
-        run: mvn --batch-mode --update-snapshots verify
+        run: mvn --batch-mode --update-snapshots verify --file student-service/pom.xml
       # Step 4
       - name: Package Application
         run: mkdir staging && cp target/*.jar staging
