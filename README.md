@@ -134,7 +134,7 @@ sudo yum install wget
 ```
 
 ```shell
-wget https://bucket-name.s3.region-identifier.amazonaws.com/latest/install
+wget https://aws-codedeploy-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/latest/install
 ```
 > bucket-name is the Amazon S3 bucket containing the CodeDeploy Resource Kit files for your region. region-identifier is the identifier for your region.
 > [list of bucket names and region identifiers](https://docs.aws.amazon.com/codedeploy/latest/userguide/resource-kit.html#resource-kit-bucket-names)
